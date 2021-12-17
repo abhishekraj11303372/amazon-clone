@@ -36,6 +36,12 @@
     background-color: #FEBD69;
 }
 
+.header_searchIcon:active {
+    padding: 5px;
+    height: 22px !important;
+    background-color: #e99b35;
+}
+
 .header_nav {
     display: flex;
     justify-content: space-evenly;
@@ -47,6 +53,17 @@
     margin-left: 10px;
     margin-right: 10px;
     color: white;
+}
+
+.header_optionBasket {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.header_basketCount {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .header_LineOne {
