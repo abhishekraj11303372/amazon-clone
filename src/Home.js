@@ -4,8 +4,25 @@ import './Home.css'
 
 function Home() {
     return (
-        <div className='home_container'>  
-            <img className='home_image' src={home}/>
+        <div className='home'>
+            <div home_container>  
+                <img className='home_image' src={home} alt='banner'/>
+            </div>
+            <div className='home_row'>
+                {/*Product*/}
+                {/*Product*/}
+                {/*Product*/}
+            </div>
+            <div className='home_row'>
+                {/*Product*/}
+                {/*Product*/}
+                {/*Product*/}
+            </div>
+            <div className='home_row'>
+                {/*Product*/}
+                {/*Product*/}
+                {/*Product*/}
+            </div>
         </div>
     )
 }
