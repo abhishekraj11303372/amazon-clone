@@ -2,11 +2,12 @@ import React from 'react'
 import './Header.css'
 import SearchIcon from '@mui/icons-material/Search'
 import { AddShoppingCartTwoTone } from '@mui/icons-material'
+import logo from './amazon_logo.png'
 
 function header() {
     return (
         <div className='header'> 
-            <img className='header_logo' src='http://pngimg.com/uploads/amazon/amazon_PNG11.png'/> 
+            <img className='header_logo' src={logo} alt="Amazon"/> 
             <div className='header_search'>
                 <input className='header_searchInput' type='text'/>
                 <SearchIcon className='header_searchIcon' />
