@@ -3,6 +3,7 @@
     flex-direction: row;
     row-gap: 15px;
     padding: 30px;
+    min-height: 76vh;
 }
 
 .checkout_right {
