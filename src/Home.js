@@ -28,7 +28,7 @@ function Home() {
             <div className='home_row'>
             <Product 
                 title="Top rated, premium quality | Amazon Brands & more"
-                price={11.99}
+                price={100}
                 image={productimage2}
                 rating={5}
                 />

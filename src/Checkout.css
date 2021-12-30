@@ -1,6 +1,11 @@
 .checkout {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     row-gap: 15px;
     padding: 30px;
+}
+
+.checkout_right {
+    padding-top: 20px;
+    margin-left: auto;
 }
