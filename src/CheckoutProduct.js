@@ -9,13 +9,7 @@ function CheckoutProduct({id, title, image, price, rating}) {
         //remove item from data layer or basket
         dispatch({
             type: 'REMOVE_FROM_BASKET',
-            item:  {
                 id: id,
-                title: title,
-                image: image,
-                price: price,
-                rating: rating,
-            },
         });
     };
 

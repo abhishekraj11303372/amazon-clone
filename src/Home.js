@@ -13,12 +13,14 @@ function Home() {
                 <img className='home_image' src={home} alt='banner'/>
                 <div className='home_row'>
                 <Product 
+                id="12345"
                 title="Top rated, premium quality | Amazon Brands & more"
                 price={11.99}
                 image={productimage}
                 rating={5}
                 />
                  <Product 
+                id="1234"
                 title="Top rated, premium quality | Amazon Brands & more"
                 price={11.99}
                 image={productimage1}
@@ -27,18 +29,21 @@ function Home() {
             </div>
             <div className='home_row'>
             <Product 
+                id="12"
                 title="Top rated, premium quality | Amazon Brands & more"
                 price={100}
                 image={productimage2}
                 rating={5}
                 />
                  <Product 
+                id="1345"
                 title="Top rated, premium quality | Amazon Brands & more"
                 price={11.99}
                 image={productimage}
                 rating={5}
                 />
                  <Product 
+                id="1235"
                 title="Top rated, premium quality | Amazon Brands & more"
                 price={11.99}
                 image={productimage1}
@@ -47,6 +52,7 @@ function Home() {
             </div>
             <div className='home_row'>
             <Product 
+                id="2345"
                 title="Top rated, premium quality | Amazon Brands & more"
                 price={11.99}
                 image={productimage2}
