@@ -5,10 +5,17 @@ import { AddShoppingCartTwoTone } from '@mui/icons-material'
 import logo from './amazon_logo.png'
 import { useStateValue } from './StateProvider'
 import {Link} from 'react-router-dom'
+import {auth} from './firebase'
 
-function header() {
-    const [{basket}, dispatch] = useStateValue();
+function Header() {
+    const [{basket}, user] = useStateValue();
     console.log("this is header in the basket ",basket)
+
+    const handleAuthenticaton = () => {
+        if (user) {
+          auth.signOut();
+        }
+      }
 
     return (
         <div className='header'> 
@@ -27,7 +34,7 @@ function header() {
                     <span className='header_LineTwo'>Account & Lists</span>
                 </div>
                 </Link>
-                <div className='header_option'>
+                <div onClick={handleAuthenticaton} className='header_option'>
                 <span className='header_LineOne'>Returns</span>
                     <span className='header_LineTwo'>&Orders</span>
                 </div>
@@ -49,4 +56,4 @@ function header() {
     )
 }
 
-export default header
+export default Header
