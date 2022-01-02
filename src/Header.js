@@ -6,7 +6,7 @@ import logo from './amazon_logo.png'
 import { useStateValue } from './StateProvider'
 import {Link} from 'react-router-dom'
 
-function header() {
+function Header() {
     const [{basket}, dispatch] = useStateValue();
     console.log("this is header in the basket ",basket)
 
@@ -47,4 +47,4 @@ function header() {
     )
 }
 
-export default header
+export default Header
