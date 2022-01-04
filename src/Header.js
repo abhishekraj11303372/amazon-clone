@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom'
 import {auth} from './firebase'
 
 function Header() {
-    const [{basket}, user] = useStateValue();
+    const [{basket,user}, dispatch] = useStateValue();
     console.log("this is header in the basket ",basket)
 
     const handleAuthenticaton = () => {
@@ -28,10 +28,10 @@ function Header() {
                 <SearchIcon className='header_searchIcon' />
             </div>
             <div className='header_nav'>
-                <Link to='/login'>
-                <div className='header_option'>
-                    <span className='header_LineOne'>Hello Sign in</span>
-                    <span className='header_LineTwo'>Account & Lists</span>
+                <Link to={!user && '/login'}>
+                <div className='header_option' onClick={handleAuthenticaton}>
+                    <span className='header_LineOne'>{!user ? 'Guest' : user.email}</span>
+                    <span className='header_LineTwo'>{user ? 'Sign Out' : 'Sign In'}</span>
                 </div>
                 </Link>
                 <div onClick={handleAuthenticaton} className='header_option'>
