@@ -4,6 +4,7 @@ import Header from './Header';
 import Login from './Login';
 import Home from './Home';
 import Checkout from './Checkout';
+import Payment from './Payment';
 // import { Browser as Router, Switch, Route } from "react-router-dom"
 import { BrowserRouter,Routes, Route
 } from "react-router-dom"
@@ -41,7 +42,9 @@ useEffect(() => {
         <Route path="/checkout" element={<><Header /><Checkout /><Footer /></>}>
         </Route>
         <Route path="/" element={<><Header /><Home /><Footer /></>}>
-        </Route>        
+        </Route>      
+        <Route path="/payment" element={<><Header /><Payment /><Footer /></>}>
+        </Route>   
       </Routes>
       
     </BrowserRouter>
