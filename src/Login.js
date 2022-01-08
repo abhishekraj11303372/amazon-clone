@@ -24,7 +24,7 @@ function Login() {
         e.preventDefault();
 
         auth
-            .checkActionCode(email,password)
+            .createUserWithEmailAndPassword(email,password)
             .then((auth) => {
                 console.log(auth);
             })
