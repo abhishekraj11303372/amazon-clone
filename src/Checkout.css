@@ -1,0 +1,12 @@
+.checkout {
+    display: flex;
+    flex-direction: row;
+    row-gap: 15px;
+    padding: 30px;
+    min-height: 76vh;
+}
+
+.checkout_right {
+    padding-top: 20px;
+    margin-left: auto;
+}
