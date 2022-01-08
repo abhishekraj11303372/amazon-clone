@@ -11,6 +11,10 @@ import { BrowserRouter,Routes, Route
 import Footer from './Footer';
 import { auth } from './firebase';
 import { useStateValue } from './StateProvider'
+import { loadStripe } from '@stripe/stripe-js'
+import { Elements } from '@stripe/react-stripe-js'
+
+const promise = loadStripe('pk_test_51KFKSpSGI6P4F7kPWfGxjpMYHahGfcflTx97VcAMmWbFHqzDIif9RSeiflZbncdfLbFmodLI0PtX1wYs2KlN0Q4l00vKVDju36');
 
 function App() {
   const [{}, dispatch] = useStateValue();
