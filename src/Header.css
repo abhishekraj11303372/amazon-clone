@@ -74,10 +74,12 @@
     font-weight: 800;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     
     .header_nav {
         font-size: small;
+        background-color: #131921;
+        padding: 7px;
     }
 
     .header {
