@@ -74,7 +74,7 @@
     font-weight: 800;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 500px) {
     
     .header_nav {
         font-size: small;
