@@ -39,3 +39,14 @@
     color: #111;
     margin-bottom: auto;
 }
+
+@media screen and (max-width: 600px) {
+
+    .checkoutProduct_image {
+        object-fit: contain;
+        height: 100px;
+        width: 150px;
+        padding: 20px;
+    }
+
+  }

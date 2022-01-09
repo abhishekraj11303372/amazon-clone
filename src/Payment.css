@@ -29,3 +29,16 @@
 .payment_section > .address {
     flex: 0.8;
 }
+
+@media screen and (max-width: 600px) {
+    .payment {
+        margin-top:35px;
+        font-size: smaller;
+    }
+
+    .payment_section {
+        font-size: smaller;
+        flex-direction: column;
+    }
+
+  }
