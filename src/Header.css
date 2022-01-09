@@ -73,3 +73,27 @@
     font-size: 13px;
     font-weight: 800;
 }
+
+@media screen and (min-width: 400px) {
+    
+    .header_nav {
+        font-size: small;
+    }
+
+    .header {
+        flex-wrap: wrap;
+        flex: 1;
+    }
+
+    .header_optionBasket {
+        padding-left: 15px;
+    }
+
+    .header_search {
+        order: 4;
+        padding: 7px;
+        background-color: #131921;
+        border: none;
+        border-radius: 0;
+    }
+  }

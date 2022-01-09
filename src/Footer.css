@@ -6,3 +6,10 @@
     padding-top: 25px;
     margin-top: 30px;
 }
+
+@media screen and (min-width: 400px) {
+    
+    .footer {
+        font-size: small;
+    }
+  }
