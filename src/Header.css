@@ -76,19 +76,30 @@
 
 @media screen and (max-width: 600px) {
     
+    
+
+    .header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: smaller;
+    }
+
+    .header_logo {
+        width: 70px;
+        object-fit: contain;
+        margin: 0 15px;
+        margin-top: 16px;
+    }
+
     .header_nav {
         font-size: small;
         background-color: #131921;
         padding: 7px;
-    }
-
-    .header {
-        flex-wrap: wrap;
-        flex: 1;
+        font-size: smaller;
     }
 
     .header_optionBasket {
-        padding-left: 15px;
+        padding-left: 7px;
     }
 
     .header_search {
