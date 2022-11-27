@@ -73,3 +73,40 @@
     font-size: 13px;
     font-weight: 800;
 }
+
+@media screen and (max-width: 600px) {
+    
+    
+
+    .header {
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: smaller;
+    }
+
+    .header_logo {
+        width: 70px;
+        object-fit: contain;
+        margin: 0 15px;
+        margin-top: 16px;
+    }
+
+    .header_nav {
+        font-size: small;
+        background-color: #131921;
+        padding: 7px;
+        font-size: smaller;
+    }
+
+    .header_optionBasket {
+        padding-left: 7px;
+    }
+
+    .header_search {
+        order: 4;
+        padding: 7px;
+        background-color: #131921;
+        border: none;
+        border-radius: 0;
+    }
+  }
